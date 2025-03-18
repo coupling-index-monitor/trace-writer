@@ -1,0 +1,56 @@
+.env
+/__pychach__# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+env/
+venv/
+.venv/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.out
+
+# Environment variables
+.env
+
+# Dependency directories
+node_modules/
+
+# Build files
+*.egg-info/
+dist/
+build/
+
+# Docker
+docker-compose.override.yml
+
+# Test coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# Database dumps or files
+*.db
+*.sql
+*.sqlite
+
+# FastAPI static files cache
+staticfiles/
+
+# Pytest cache
+.cache/
+
+traces/
+traces_*/
