@@ -122,7 +122,7 @@ def get_human_time(time_us):
 
 def run_trace_writer():
     """ Fetches traces from the last recorded timestamp or the last 15 minutes. """
-    log("Starting trace fetch process...")
+    log("\nStarting trace fetch process at " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
     end_time = int(time.time() * 1_000_000)
 
