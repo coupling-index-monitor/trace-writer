@@ -12,7 +12,9 @@ load_dotenv()
 
 
 # Ensure traces and offset.json are stored inside the traces directory
-TRACES_DIR = os.path.join(os.getcwd(), "traces")
+TRACES_DIR = os.getenv("TRACES_DIR")
+if TRACES_DIR is None:
+    raise ValueError("TRACES_DIR environment variable is not set")
 OFFSET_FILE = os.path.join(TRACES_DIR, "offset.json")
 TRACE_LIMIT = 2000  # Max limit per Jaeger request
 SERVICES = os.getenv("SERVICES").split(",")  # List of services to fetch traces for
